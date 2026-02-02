@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Will You Be My Valentine?</title>
+    <!-- Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background Layer with User Image -->
+    <div class="bg-layer"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- Floating Particles Container -->
+    <div class="particles" aria-hidden="true">
+        <!-- JS will populate or CSS decoration -->
+    </div>
+
+    <!-- Main Glass Card -->
+    <main class="glass-card" id="mainContainer">
+        <header class="card-header">
+            <h1 class="main-title">Will you be my Valentine?</h1>
+            <div class="divider">
+                <span class="heart-icon">♥</span>
+            </div>
+        </header>
+
+        <div class="card-body">
+            <p class="love-note">
+                To the one who lights up my world...<br>
+                Your smile is my favorite sunrise, and your laugh is my favorite song.<br>
+                Life is just better with you.
+            </p>
+        </div>
+
+        <footer class="card-actions">
+            <button id="yesBtn" class="btn btn-primary">
+                <span class="btn-text">Yes, absolutely!</span>
+                <span class="btn-glow"></span>
+            </button>
+            <button id="noBtn" class="btn btn-secondary">No</button>
+        </footer>
+    </main>
+
+    <!-- Celebration Overlay -->
+    <div class="celebration-overlay hidden" id="celebrationContent">
+        <div class="celebration-card">
+            <h1 class="celebration-title">I knew it! ❤️</h1>
+            <p class="celebration-text">
+                Best decision ever.<br>I love you so much! 🌹
+            </p>
+        </div>
+    </div>
+
+    <!-- Elegant Modal -->
+    <div id="retryModal" class="modal hidden">
+        <div class="modal-glass">
+            <div class="modal-body">
+                <p>You're playing hard to get! 😉<br>Why don't you try <strong>Yes</strong>?</p>
+                <button id="closeModal" class="btn btn-small">Okay</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
